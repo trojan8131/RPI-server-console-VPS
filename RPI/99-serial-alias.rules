@@ -1,0 +1,1 @@
+SUBSYSTEM=="tty",ATTRS{serial}=="FTB6SPL3" , SYMLINK+="ttyUSB_serial_console1"

@@ -1,0 +1,13 @@
+[Unit]
+Description=WvDial modem connection profile: %i
+After=network.target
+Wants=network.target
+
+[Service]
+ExecStart=/usr/bin/wvdial %i
+Restart=always
+RestartSec=5
+StandardOutput=journal
+
+[Install]
+WantedBy=multi-user.target
